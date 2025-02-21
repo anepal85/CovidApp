@@ -79,34 +79,12 @@ The Flask backend acts as a proxy for the external API and provides the followin
 - Python 3.9+
 - Node.js 16+
 
----
-
-### **Installation**
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/covid-dashboard.git
-   cd covid-dashboard
-   ```
-
-2. Build and run the application using Docker Compose:
-   ```bash
-   docker-compose up --build
-   ```
-
-3. Access the application:
-   - Backend: `http://localhost:5000`
-   - Frontend: `http://localhost:3000`
-
----
-
 ### **Running Tests**
 To run the unit tests for the Flask backend:
 ```bash
 cd backend
 python -m unittest tests/test_app.py
 ```
-
----
 
 ### **CI/CD Pipeline**
 This project uses GitHub Actions for CI/CD. The pipeline:
