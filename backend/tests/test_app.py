@@ -6,8 +6,8 @@ class CovidAPITests(unittest.TestCase):
     BASE_URL = "https://disease.sh/v3/covid-19"
 
     def test_api_reachable(self):
-        """Test if the external API is reachable."""
-        response = requests.get(f"{self.BASE_URL}/")
+        """Test if the external API is reachable by hitting a valid endpoint."""
+        response = requests.get(f"{self.BASE_URL}/countries")
         self.assertEqual(response.status_code, 200)
 
     def test_covid_stats_endpoint(self):
