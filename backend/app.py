@@ -15,6 +15,7 @@ def get_covid_stats():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
     
+    
 
 @app.route('/api/covid/historical/<country>', methods=['GET'])
 def get_historical_data(country):
