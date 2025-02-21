@@ -10,7 +10,7 @@ services:
     restart: always
 
   frontend:
-    build: ./frontend
+    build: ./covid-frontend
     ports:
       - "3000:3000"
     environment:
