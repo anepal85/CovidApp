@@ -18,3 +18,9 @@ services:
     depends_on:
       - backend
     restart: always
+
+  test:
+    build: ./backend
+    command: python -m unittest tests/test_app.py
+    depends_on:
+      - backend

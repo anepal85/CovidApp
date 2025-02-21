@@ -2,7 +2,8 @@ import unittest
 import requests
 
 class FlaskAppTests(unittest.TestCase):
-    BASE_URL = "http://localhost:5000"
+    # Use the service name 'backend' instead of 'localhost'
+    BASE_URL = "http://backend:5000"
 
     def test_app_running(self):
         response = requests.get(f"{self.BASE_URL}/")
