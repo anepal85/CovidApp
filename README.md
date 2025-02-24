@@ -1,6 +1,3 @@
-Here’s a comprehensive `README.md` for your COVID-19 Data Dashboard project. It explains the purpose of the project, the API being used, the Flask endpoints, and what users can do with the application.
-
----
 
 # **COVID-19 Data Dashboard**
 
